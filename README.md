@@ -4,7 +4,7 @@
 
 ![玄武号ROV](Doc/玄武号ROV.png)
 
- <center>玄武号ROV<center>
+ <center>玄武号ROV</center>
 
 本程序是玄武号ROV的BootLoader程序，主控芯片采用STM32H743IIT6，基于嵌入式轻量级TCP/IP协议栈Lwip RAW编程接口实现。
 
