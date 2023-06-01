@@ -2,7 +2,7 @@
 
 ## 写在前面
 
-![玄武号ROV](D:\Git_storage\XUANWU_ROV_BOOTLOADER\Doc\玄武号ROV.png)
+![玄武号ROV](Doc/玄武号ROV.png)
 
  <center>玄武号ROV<center>
 
