@@ -27,6 +27,8 @@ new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth_ex.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h
+new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h
+new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
@@ -34,8 +36,12 @@ new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 new_tftp_iap\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+new_tftp_iap\main.o: ../Inc/dac.h
+new_tftp_iap\main.o: ../Inc/dma.h
 new_tftp_iap\main.o: ../Inc/lwip.h
 new_tftp_iap\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h
 new_tftp_iap\main.o: ../Inc/lwipopts.h
@@ -72,6 +78,7 @@ new_tftp_iap\main.o: ../Middlewares/Third_Party/LwIP/src/include/netif/ethernet.
 new_tftp_iap\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h
 new_tftp_iap\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h
 new_tftp_iap\main.o: ../Inc/ethernetif.h
+new_tftp_iap\main.o: ../Inc/tim.h
 new_tftp_iap\main.o: ../Inc/usart.h
 new_tftp_iap\main.o: ../Inc/gpio.h
 new_tftp_iap\main.o: ../Inc/tcpclient.h
@@ -93,3 +100,5 @@ new_tftp_iap\main.o: ../Inc/tftpserver.h
 new_tftp_iap\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/udp.h
 new_tftp_iap\main.o: ../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h
 new_tftp_iap\main.o: ../Inc/iap.h
+new_tftp_iap\main.o: ..\MDK-ARM\bsp_dac.h
+new_tftp_iap\main.o: ..\MDK-ARM\bsp_pwm.h

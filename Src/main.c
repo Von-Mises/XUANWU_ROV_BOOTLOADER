@@ -20,7 +20,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dac.h"
+#include "dma.h"
 #include "lwip.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -32,6 +35,9 @@
 #include "tcp_echoserver.h"
 #include "tftpserver.h"
 #include "iap.h"
+
+#include "bsp_dac.h"
+#include "bsp_pwm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,7 +48,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define DELAY_TIME 10     //10ms
-#define WAIT_TIME  10000  //10s=10000ms
+#define WAIT_TIME  3000  //3s=5000ms
 #define WAIT_FREQUENCY WAIT_TIME/DELAY_TIME
 #define PER_SECOND_FREQUENVY (1000/DELAY_TIME)
 /* USER CODE END PD */
@@ -117,12 +123,17 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USART1_UART_Init();
   MX_LWIP_Init();
+  MX_DAC1_Init();
+  MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
 	printf("This is a TFTP IAP test\r\n");
 	tftp_server_init();
 	tcp_echoserver_init();
+	Track_Motor_Init();
+	pwm_init();
 	//TCP_Client_Init();
 	//TCP_Echo_Init();
   /* USER CODE END 2 */
@@ -185,6 +196,8 @@ int main(void)
 			{
 				if(((*(vu32*)(JUMP_FLASH_APP1_ADDR+4))&0xFF000000)==0x08000000)
 				{
+					HAL_DAC_Stop_DMA(&hdac1, DAC_CHANNEL_1);
+					HAL_DAC_Stop_DMA(&hdac1, DAC_CHANNEL_2);
 					SysTick->CTRL = 0x00;  //½ûÖ¹SysTick
 					SysTick->LOAD = 0;
 					SysTick->VAL  = 0;

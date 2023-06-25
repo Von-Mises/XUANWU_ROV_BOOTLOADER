@@ -1,12 +1,8 @@
-# 玄武号ROV BootLoader程序
+# 申龙Ⅱ号ROV BootLoader程序
 
 ## 写在前面
 
-![玄武号ROV](Doc/玄武号ROV.png)
-
-<div align = "center">玄武号ROV</div>
-
-本程序是玄武号ROV的BootLoader程序，主控芯片采用STM32H743IIT6，基于嵌入式轻量级TCP/IP协议栈Lwip RAW编程接口实现。
+本程序是申龙Ⅱ号BootLoader程序，主控芯片采用STM32H743IIT6，基于嵌入式轻量级TCP/IP协议栈Lwip实现。
 
 下位机作为TCP以及TFTP服务器，上位机作为客户端。下位机监听来自上位机目标端口号‘5678’的TCP连接请求与目标端口号‘69’的UDP连接请求。
 

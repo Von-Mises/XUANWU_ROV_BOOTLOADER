@@ -26,6 +26,8 @@ new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth_ex.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h
+new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac.h
+new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dac_ex.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
@@ -33,5 +35,7 @@ new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 new_tftp_iap\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
